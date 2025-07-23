@@ -1,0 +1,4 @@
+astapi
+uvicorn
+pylunar
+requests
