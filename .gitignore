@@ -1,0 +1,31 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+.env
+.venv/
+venv/
+env/
+*.sqlite3
+
+# --- Tailwind / Node ---
+node_modules/
+package-lock.json
+output.css
+src/output.css
+tailwind.config.js
+
+# --- VS Code ---
+.vscode/
+
+# --- Linux ---
+.DS_Store
+*.swp
+*~
+
+# --- Render ---
+*.log
+*.tmp
