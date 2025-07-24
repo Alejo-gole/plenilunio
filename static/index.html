@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plenilunio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-neutral-900 text-white font-sans p-4">
+    <main class="max-w-xl mx-auto text-center space-y-4">
+        <h1 class="text-3xl font-bold">🌕 Plenilunio</h1>
+
+        <div id="location-form" class="space-y-4">
+            <div>
+                <label for="select-country" class="block text-left">País:</label>
+                <select id="select-country" class="w-full p-2 rounded text-black">
+                    <option value="">– Selecciona un país –</option>
+                </select>
+            </div>
+            <div>
+                <label for="select-state" class="block text-left">Departamento/Estado:</label>
+                <select id="select-state" class="w-full p-2 rounded text-black" disabled>
+                    <option value="">– Primero elige país –</option>
+                </select>
+            </div>
+            <div>
+                <label for="select-city" class="block text-left">Ciudad:</label>
+                <select id="select-city" class="w-full p-2 rounded text-black" disabled>
+                    <option value="">– Primero elige estado –</option>
+                </select>
+            </div>
+            <button id="btn-fetch-location"
+                class="w-full bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700" disabled>
+                Consultar ritmo lunar
+            </button>
+        </div>
+
+        <div id="info" class="space-y-2 mt-6"></div>
+
+        <footer class="mt-10 text-sm">
+            <a href="privacy.html">Privacidad</a> ·
+            <a href="terms.html">Términos</a> ·
+            <a href="accessibility.html">Accesibilidad</a>
+        </footer>
+    </main>
+    <script src="app.js" defer></script>
+</body>
+
+</html>

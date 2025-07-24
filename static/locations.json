@@ -1,0 +1,10 @@
+{
+  "Colombia": {
+    "Cundinamarca": ["Bogotá", "Soacha"],
+    "Antioquia": ["Medellín", "Envigado"]
+  },
+  "Chile": {
+    "Región Metropolitana": ["Santiago", "Puente Alto"],
+    "Valparaíso": ["Valparaíso", "Viña del Mar"]
+  }
+}
