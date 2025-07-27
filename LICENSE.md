@@ -30,3 +30,23 @@ https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
 
 Human-readable summary:  
 https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+
+## 📦 Third-Party Dependencies and Licenses
+
+This project uses third-party software libraries that are separately licensed as follows:
+
+- **FastAPI**  
+  License: [MIT License](https://opensource.org/licenses/MIT)  
+  Repository: [https://github.com/tiangolo/fastapi](https://github.com/tiangolo/fastapi)
+
+- **Uvicorn**  
+  License: [BSD 3-Clause License](https://opensource.org/licenses/BSD-3-Clause)  
+  Repository: [https://github.com/encode/uvicorn](https://github.com/encode/uvicorn)
+
+- **Astral**  
+  License: [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)  
+  Repository: [https://github.com/sffjunkie/astral](https://github.com/sffjunkie/astral)
+
+These libraries are included via `requirements.txt` and are subject to their respective licenses.

@@ -28,44 +28,45 @@ It offers users a simple interface to view the current moon phase, its illuminat
 
 1. Clone the repo:
    ```bash
-   https://github.com/Alejo-gole/plenilunio.git
+   git clone https://github.com/Alejo-gole/plenilunio.git
    cd plenilunio
 
 2. Install dependencies:
 
-pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
 
 
 3. Run the server:
 
-uvicorn app.main:app --reload
+   ```bash
+   uvicorn app.main:app --reload
 
 
-4. Visit http://localhost:8000 in your browser.
+4. Visit localhost in your browser.
 
 ---
 
 # 📄 Licenses
 
-🔧 Code License
+## 🔧 Project Code
+This project’s source code (HTML, CSS, JS, Python) is licensed under
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0).
 
-All source code in this repository (HTML, CSS, JS, Python) is licensed under the
-Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0).
+You are free to:
 
-You are free to share and adapt the code for non-commercial purposes, provided that you:
+- Share and adapt for non-commercial purposes
 
-Attribute the original author,
+- Attribute the original author
 
-Do not use it commercially,
-
-Share adaptations under the same license.
+- Use only under the same license
 
 
-🎨 Creative Content Rights
+## 🎨 Creative Content Rights
 
 All symbolic content, textual reflections, UI narrative structure, visual metaphors, and philosophical concepts are original works by Alejandro Rodríguez and are not freely licensed.
 
-See: CREATIVE-CONTENT-NOTICE.md
+See: [CREATIVE-CONTENT-NOTICE](:/CREATIVE-CONTENT-NOTICE.md)
 
 These works are part of the author's professional and academic portfolio.
 Do not reproduce, adapt, or use them without explicit permission.
@@ -75,7 +76,7 @@ Do not reproduce, adapt, or use them without explicit permission.
 
 🙏 Credits
 
-Created with lunar care by Alejandro Rodríguez
+Created with life care by Alejandro Rodríguez
 Visual communicator · Nature-conscious design advocate · Researcher in symbolic interfaces
 
 
