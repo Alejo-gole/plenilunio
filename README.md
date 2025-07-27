@@ -28,7 +28,7 @@ It offers users a simple interface to view the current moon phase, its illuminat
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/yourusername/plenilunio.git
+   https://github.com/Alejo-gole/plenilunio.git
    cd plenilunio
 
 2. Install dependencies:
