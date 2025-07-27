@@ -36,12 +36,10 @@ It offers users a simple interface to view the current moon phase, its illuminat
    ```bash
    pip install -r requirements.txt
 
-
 3. Run the server:
 
    ```bash
    uvicorn app.main:app --reload
-
 
 4. Visit localhost in your browser.
 
@@ -50,15 +48,12 @@ It offers users a simple interface to view the current moon phase, its illuminat
 # 📄 Licenses
 
 ## 🔧 Project Code
-This project’s source code (HTML, CSS, JS, Python) is licensed under
-Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0).
+This project’s source code is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 You are free to:
 
 - Share and adapt for non-commercial purposes
-
 - Attribute the original author
-
 - Use only under the same license
 
 
@@ -66,11 +61,28 @@ You are free to:
 
 All symbolic content, textual reflections, UI narrative structure, visual metaphors, and philosophical concepts are original works by Alejandro Rodríguez and are not freely licensed.
 
-See: [CREATIVE-CONTENT-NOTICE](:/CREATIVE-CONTENT-NOTICE.md)
+See: [CREATIVE-CONTENT-NOTICE.md](CREATIVE-CONTENT-NOTICE.md)
 
 These works are part of the author's professional and academic portfolio.
 Do not reproduce, adapt, or use them without explicit permission.
 
+## 📦 Third-Party Dependencies and Licenses
+
+This project uses third-party software libraries that are separately licensed as follows:
+
+- **FastAPI**  
+  License: [MIT License](https://opensource.org/licenses/MIT)  
+  Repository: [https://github.com/tiangolo/fastapi](https://github.com/tiangolo/fastapi)
+
+- **Uvicorn**  
+  License: [BSD 3-Clause License](https://opensource.org/licenses/BSD-3-Clause)  
+  Repository: [https://github.com/encode/uvicorn](https://github.com/encode/uvicorn)
+
+- **Astral**  
+  License: [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)  
+  Repository: [https://github.com/sffjunkie/astral](https://github.com/sffjunkie/astral)
+
+These libraries are included via `requirements.txt` and are subject to their respective licenses.
 
 ---
 
