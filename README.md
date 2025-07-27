@@ -48,13 +48,14 @@ It offers users a simple interface to view the current moon phase, its illuminat
 # 📄 Licenses
 
 ## 🔧 Project Code
-This project’s source code is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+This project’s source code is licensed under the GNU General Public License v3.0 (GPL-3.0).
 
 You are free to:
 
-- Share and adapt for non-commercial purposes
-- Attribute the original author
-- Use only under the same license
+- Use, study, and modify the code
+- Distribute it and your changes
+- As long as you distribute your modifications under the same license
+- Commercial use is allowed under the same terms
 
 
 ## 🎨 Creative Content Rights
@@ -96,6 +97,6 @@ Visual communicator · Nature-conscious design advocate · Researcher in symboli
 
 🌱 Philosophy
 
-Plenilunio is more than code—it's a contemplative gesture.
+*Plenilunio is more than code—it's a contemplative gesture.*
 It lives in the rhythm of the moon, not in scrolls or feeds.
 Designed with minimal environmental impact and maximal poetic intent.
