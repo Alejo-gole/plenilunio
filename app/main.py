@@ -1,9 +1,6 @@
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
-from dotenv import load_dotenv
 from app.api.v1 import daily_rhythm
-
-load_dotenv()
 
 app = FastAPI()
 

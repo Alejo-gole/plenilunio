@@ -8,36 +8,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-neutral-900 text-white font-sans p-4">
-    <main class="max-w-xl mx-auto text-center space-y-4">
-        <h1 class="text-3xl font-bold">🌕 Plenilunio</h1>
-
-        <div id="location-form" class="space-y-4">
-            <div>
-                <label for="select-country" class="block text-left">País:</label>
-                <select id="select-country" class="w-full p-2 rounded text-black">
-                    <option value="">– Selecciona un país –</option>
-                </select>
-            </div>
-            <div>
-                <label for="select-state" class="block text-left">Departamento/Estado:</label>
-                <select id="select-state" class="w-full p-2 rounded text-black" disabled>
-                    <option value="">– Primero elige país –</option>
-                </select>
-            </div>
-            <div>
-                <label for="select-city" class="block text-left">Ciudad:</label>
-                <select id="select-city" class="w-full p-2 rounded text-black" disabled>
-                    <option value="">– Primero elige estado –</option>
-                </select>
-            </div>
-            <button id="btn-fetch-location"
-                class="w-full bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700" disabled>
-                Consultar ritmo lunar
-            </button>
+<body class="bg-neutral-900 text-white font-sans p-5">
+    <header class="bg-neutral-800 p-5 shadow-lg rounded-md" role="banner">
+        <div class="container items-center mx-auto flex md:flex-row justify-between">
+            <a href="index.html" class="text-3xl font-bold focus:outline-none focus:ring-2 focus:ring-teal-500" aria-label="Página de inicio de Plenilunio">🌕 Plenilunio</a>
+            <div id="info" class="text-lg pl-5" aria-label="Estado actual de la luna"></div>
         </div>
-
-        <div id="info" class="space-y-2 mt-6"></div>
+    </header>
+    <main class="max-w-xl mx-auto text-center space-y-4">
 
         <footer class="mt-10 text-sm">
             <a href="privacy.html">Privacidad</a> ·
