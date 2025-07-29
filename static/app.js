@@ -194,12 +194,18 @@ async function getEcoCicleAndVars(lat, lon, months) {
 function mostrarResultado({ ciclo, humedadHoy, lluviaHoy }) {
   const cont = document.getElementById("result-container");
   const eco = document.getElementById("eco-result");
+  const precip = document.getElementById("precip-result");
+  const hum = document.getElementById("hum-result");
   const loader = document.getElementById("loader");
   loader.classList.add("hidden");
   eco.innerHTML = `
-    <strong>Ciclo ecológico:</strong> ${ciclo}<br>
-    <strong>Humedad relativa actual:</strong> ${humedadHoy}%<br>
+    <strong>Ciclo ecológico:</strong> ${ciclo}
+  `;
+  precip.innerHTML = `
     <strong>Precipitación de hoy:</strong> ${lluviaHoy} mm
+  `;
+  hum.innerHTML = `
+    <strong>Humedad relativa actual:</strong> ${humedadHoy}%<br>
   `;
   cont.classList.remove("hidden");
 }
