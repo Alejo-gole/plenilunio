@@ -60,7 +60,7 @@ You are free to:
 
 ## 🎨 Creative Content Rights
 
-All symbolic content, textual reflections, UI narrative structure, visual metaphors, and philosophical concepts are original works by Alejandro Rodríguez and are not freely licensed.
+All symbolic content, textual reflections, UI narrative structure, visual metaphors, and philosophical concepts are original works Copyright © 2025 [Alejandro González] and are not freely licensed.
 
 See: [CREATIVE-CONTENT-NOTICE.md](CREATIVE-CONTENT-NOTICE.md)
 

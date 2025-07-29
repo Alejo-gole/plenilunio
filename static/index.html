@@ -10,19 +10,112 @@
 
 <body class="bg-neutral-900 text-white font-sans p-5">
     <header class="bg-neutral-800 p-5 shadow-lg rounded-md" role="banner">
-        <div class="container items-center mx-auto flex md:flex-row justify-between">
-            <a href="index.html" class="text-3xl font-bold focus:outline-none focus:ring-2 focus:ring-teal-500" aria-label="Página de inicio de Plenilunio">🌕 Plenilunio</a>
-            <div id="info" class="text-lg pl-5" aria-label="Estado actual de la luna"></div>
+        <div class="container items-center mx-auto flex flex-col sm:flex-row justify-between">
+            <a href="index.html"
+                class="text-3xl font-bold focus:outline-none focus:ring-3 focus:ring-teal-500 focus:rounded-md"
+                aria-label="Página de inicio de Plenilunio">Plenilunio</a>
+            <div id="info" class="text-lg pr-5" aria-label="Estado actual de la luna"></div>
         </div>
     </header>
-    <main class="max-w-xl mx-auto text-center space-y-4">
+    <main id="main-content" class="mx-auto mt-4 mb-4" aria-labelledby="main-heading">
+        <h1 id="main-heading" class="sr-only">Contenido principal de eventos fenológicos locales y prácticas agrícolas
+        </h1>
 
-        <footer class="mt-10 text-sm">
-            <a href="privacy.html">Privacidad</a> ·
-            <a href="terms.html">Términos</a> ·
-            <a href="accessibility.html">Accesibilidad</a>
-        </footer>
+        <section aria-labelledby="filter-heading" class="mx-auto mt-4 mb-4 bg-neutral-800 shadow-lg rounded-md p-5">
+            <h2 id="filter-heading" class="text-lg text-center pb-2 mb-2 border-b-2">Filtrar por Ubicación</h2>
+
+            <form action="" id="location">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                    <div>
+                        <label for="department-select" class="block font-bold mb-1.5">Departamento:</label>
+                        <select name="department" id="department-select" required
+                            class="block w-full px-4 py-2 bg-neutral-900 rounded-full appearance-none focus:outline-none focus:ring-3 focus:ring-teal-500 focus:rounded-md md:text-lg"
+                            aria-label="Selecciona un departamento">
+                            <option value="">Selecciona un departamento</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="city-select" class="block font-bold mb-1.5">Ciudad/Municipio:</label>
+                        <select name="city" id="city-select" required
+                            class="block w-full px-4 py-2 bg-neutral-900 rounded-full appearance-none focus:outline-none focus:ring-3 focus:ring-teal-500 focus:rounded-md md:text-lg"
+                            aria-label="Selecciona una ciudad o municipio">
+                            <option value="">Selecciona una ciudad</option>
+                        </select>
+                    </div>
+                    <div class="border-l-2 pl-6 ml-2">
+                        <label for="month-select" class="block font-bold mb-1.5">Mes actual:</label>
+                        <select name="month" id="month-select" required
+                            class="block w-full px-4 py-2 bg-neutral-900 rounded-full appearance-none focus:outline-none focus:ring-3 focus:ring-teal-500 focus:rounded-md md:text-lg"
+                            aria-label="Selecciona el mes actual">
+                            <option value="">Selecciona un mes</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row gap-4">
+                    <button type="submit"
+                        class="w-auto flex-1/2 bg-neutral-50 rounded-b-2xl text-neutral-900 font-bold px-7 py-2 focus:outline-none focus:ring-3 focus:ring-teal-500 hover:bg-neutral-900 hover:text-neutral-50"
+                        aria-label="Aplicar los filtros de departamento y ciudad">Aplicar Filtro</button>
+                    <button type="button" id="current-location"
+                        class="w-auto flex-1/2 bg-neutral-50 rounded-t-2xl text-neutral-900 font-bold px-7 py-2 focus:outline-none focus:ring-3 focus:ring-teal-500 hover:bg-neutral-900 hover:text-neutral-50"
+                        aria-label="Usar la Ubicación geográfica actual del dispositivo">Usar Ubicación Actual</button>
+                </div>
+            </form>
+        </section>
+
+        <section aria-labelledby="cards-heading">
+            <h2 id="cards-heading" class="sr-only">Sabiduría contextual</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <article
+                    class="relative bg-neutral-800 shadow-lg rounded-md p-3 hover:bg-neutral-50 hover:text-neutral-900 transition-colors duration-300"
+                    aria-label="información fenológica local">
+                    <h3>Evento fenológico local</h3>
+                    <div id="loader" class="inset-0 items-center justify-center bg-neutral-800/80 hidden">
+                        <svg class="h-10 w-10 animate-spin text-teal-500" viewBox="0 0 32 32">
+                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4">
+                            </circle>
+                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
+                        </svg>
+                    </div>
+                    <div id="result-container" class="hidden">
+                            <div class="">
+                                <h2 class="mb-4">Condiciones Actuales</h2>
+                                <p id="eco-result" class="mb-2"></p>
+                                <p id="precip-result" class="mb-2"></p>
+                                <p id="hum-result" class="mb-2"></p>
+                            </div>
+                    </div>
+                    <a href="#"
+                        class="pl-2 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:rounded-md hover:underline hover:decoration-wavy hover:font-bold"
+                        aria-label="Bótton o algo">link aquí</a>
+                </article>
+                <article
+                    class="bg-neutral-800 shadow-lg rounded-md p-3 hover:bg-neutral-50 hover:text-neutral-900 transition-colors duration-300"
+                    aria-label="información de la tarjeta 2">
+                    <h3>Pŕactica agrícola</h3>
+                    <p class="mb-2">Contenido de la tarjeta</p>
+                    <a href="#"
+                        class="pl-2 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:rounded-md hover:underline hover:decoration-wavy hover:font-bold"
+                        aria-label="Bótton o algo">link aquí</a>
+                </article>
+                <article class="bg-neutral-800 shadow-lg rounded-md p-3" aria-label="información de la tarjeta 3">
+                    <h3>La Chagra</h3>
+                    <p class="mb-2">Contenido de la tarjeta</p>
+                    <a href="#"
+                        class="pl-2 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:rounded-md hover:underline hover:decoration-wavy hover:font-bold"
+                        aria-label="Bótton o algo">link aquí</a>
+                </article>
+            </div>
+        </section>
     </main>
+    <footer class="text-center space-y-2 ">
+        <p>Copyright © 2025 Alejandro González</p>
+        <a href="privacy.html"
+            class="focus:outline-none focus:ring-3 focus:ring-teal-500 focus:rounded-md">Privacidad</a> ·
+        <a href="terms.html" class="focus:outline-none focus:ring-3 focus:ring-teal-500 focus:rounded-md">Términos</a> ·
+        <a href="accessibility.html"
+            class="focus:outline-none focus:ring-3 focus:ring-teal-500 focus:rounded-md">Accesibilidad</a>
+    </footer>
+
     <script src="app.js" defer></script>
 </body>
 
